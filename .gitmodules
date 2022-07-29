@@ -1,0 +1,6 @@
+[submodule "Book-Hunter-Config-Server"]
+	path = Book-Hunter-Config-Server
+	url = https://github.com/lauravz98/Book-Hunter-Config-Server
+[submodule "Eureka-Server"]
+	path = Eureka-Server
+	url = https://github.com/lauravz98/Eureka-Server
