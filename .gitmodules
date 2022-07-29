@@ -4,3 +4,15 @@
 [submodule "Eureka-Server"]
 	path = Eureka-Server
 	url = https://github.com/lauravz98/Eureka-Server
+[submodule "Book-Hunter-Config-repo"]
+	path = Book-Hunter-Config-repo
+	url = https://github.com/lauravz98/Book-Hunter-Config-repo.git
+[submodule "Book-Hunter-Back-Proxy-Reviews"]
+	path = Book-Hunter-Back-Proxy-Reviews
+	url = https://github.com/lauravz98/Book-Hunter-Back-Proxy-Reviews.git
+[submodule "Book-Hunter-Back-Proxy-Books"]
+	path = Book-Hunter-Back-Proxy-Books
+	url = https://github.com/lauravz98/Book-Hunter-Back-Proxy-Books.git
+[submodule "Book-Hunter-Proxy-Keywords-Service"]
+	path = Book-Hunter-Proxy-Keywords-Service
+	url = https://github.com/lauravz98/Book-Hunter-Proxy-Keywords-Service.git
