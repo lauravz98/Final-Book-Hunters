@@ -20,10 +20,10 @@ Book Hunters es una aplicación creada con el objetivo de crear una comunidad co
 </p>
 
 En este sentido se crea un ciclo donde no termina la vida util de los libros y se estimula la lectura de una forma ludica
-
+# Overview project
 Desarrollada el back con microservicios con Java Spring Boot principalmente. Y un microservicio en Python con flask
 El Front fue desarrollado en Angular, utilizando principalmente TS, HTML y CSS. Se utilizaron librerias como Angular Material para los componentes, Bootstrap y Toastify.
-
+### Tecnologias del frontend
 <p align="center">
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="120" height="120" />	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="120" height="120"/>	   
@@ -31,9 +31,11 @@ El Front fue desarrollado en Angular, utilizando principalmente TS, HTML y CSS. 
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="120" height="120"/>  
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="120" height="120"/>
 </p>  
+
+### Tecnologias del backend
 <p align="center">
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"  width="120" height="120"/>
-	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="120" height="120"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="120" height="120"/>          
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="120" height="120"/>
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="120" height="120"/>
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="120" height="120"/>          
