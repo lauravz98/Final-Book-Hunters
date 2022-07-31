@@ -9,6 +9,15 @@ Esta aplicacion es el proyecto final del Bootcamp de FullStack de JAVA powered b
 3. Next steps
 4. Acknowledgments
 
+# What's Book Hunters?
+
+Book Hunters es una aplicación creada con el objetivo de crear una comunidad colaborativa de lectores donde se compartan libros, mediante la app que conecta personas que deseen esconder sus libros y otras que deseen encontrarlos.
+
+<p align="center">
+    <img src = /img/2.png width="650">
+</p>
+
+En este sentido se crea un ciclo donde no termina la vida util de los libros y se estimula la lectura de una forma ludica
 
 Desarrollada el back con microservicios con Java Spring Boot principalmente. Y un microservicio en Python con flask
 El Front fue desarrollado en Angular, utilizando principalmente TS, HTML y CSS. Se utilizaron librerias como Angular Material para los componentes, Bootstrap y Toastify.
