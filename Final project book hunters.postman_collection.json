@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "db8dad6b-c694-44ec-a92d-514f8364fef7",
+		"name": "Final project book hunters",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16515807"
+	},
+	"item": [
+		{
+			"name": "https://api2.isbndb.com/book/8418118369",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api2.isbndb.com/book/8418118369",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"isbndb",
+						"com"
+					],
+					"path": [
+						"book",
+						"8418118369"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/reviews",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"laura\",\r\n    \"grade1\": 5,\r\n    \"grade2\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/reviews OK",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"review\": \"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/keywords",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"keywords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.googleapis.com/books/v1/volumes?q=carlos jaramillo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/books/v1/volumes?q=s1gVAAAAYAAJ",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"books",
+						"v1",
+						"volumes"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "s1gVAAAAYAAJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/myBooks",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "000000",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/myBooks?userId=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myBooks"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://openlibrary.org/isbn/9780140328721.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://openlibrary.org/works/OL45883W.json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"works",
+						"OL45883W.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api2.isbndb.com/book/0439064864",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "48167_4c9e9014339a1e36598cd811abb857e1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api2.isbndb.com/book/0439064864",
+					"protocol": "https",
+					"host": [
+						"api2",
+						"isbndb",
+						"com"
+					],
+					"path": [
+						"book",
+						"0439064864"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.librarything.com/api_getdata.php?userid=timspalding&showstructure=1&max=10&showTags=1&booksort=title_REV&responseType=json&reviewsOnly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.librarything.com/api_getdata.php?userid=timspalding&showstructure=1&max=10&showTags=1&booksort=title_REV&responseType=json&reviewsOnly",
+					"protocol": "http",
+					"host": [
+						"www",
+						"librarything",
+						"com"
+					],
+					"path": [
+						"api_getdata.php"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "timspalding"
+						},
+						{
+							"key": "showstructure",
+							"value": "1"
+						},
+						{
+							"key": "max",
+							"value": "10"
+						},
+						{
+							"key": "showCollections",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "showTags",
+							"value": "1"
+						},
+						{
+							"key": "booksort",
+							"value": "title_REV"
+						},
+						{
+							"key": "responseType",
+							"value": "json"
+						},
+						{
+							"key": "reviewsOnly",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/isbn/1N0KDgAAQBAJ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/isbn/1N0KDgAAQBAJ",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"isbn",
+						"1N0KDgAAQBAJ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/reviews/8NxGEAAAQBAJ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/reviews/8NxGEAAAQBAJ",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"reviews",
+						"8NxGEAAAQBAJ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/8NxGEAAAQBAJ/keywords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books/8NxGEAAAQBAJ/keywords",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books",
+						"8NxGEAAAQBAJ",
+						"keywords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/books/8NxGEAAAQBAJ/keywords Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://book-hunter-proxy-books.herokuapp.com/book-service/bookHidden",
+					"protocol": "https",
+					"host": [
+						"book-hunter-proxy-books",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"book-service",
+						"bookHidden"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.goodreads.com/book/isbn/0439064864?format=json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.goodreads.com/book/isbn/0439064864?format=json",
+					"protocol": "https",
+					"host": [
+						"www",
+						"goodreads",
+						"com"
+					],
+					"path": [
+						"book",
+						"isbn",
+						"0439064864"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.googleapis.com/books/v1/volumes/8NxGEAAAQBAJ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/books/v1/volumes/8NxGEAAAQBAJ",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"books",
+						"v1",
+						"volumes",
+						"8NxGEAAAQBAJ"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://book-hunter-proxy-reviews.herokuapp.com/reviews-service/reviews/156454",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://book-hunter-edge.herokuapp.com/mybooks",
+					"protocol": "https",
+					"host": [
+						"book-hunter-edge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"mybooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://book-hunter-proxy-books.herokuapp.com/bookHidden",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://book-hunter-proxy-books.herokuapp.com/bookHidden",
+					"protocol": "https",
+					"host": [
+						"book-hunter-proxy-books",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bookHidden"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

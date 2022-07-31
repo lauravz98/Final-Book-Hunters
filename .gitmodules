@@ -16,9 +16,3 @@
 [submodule "Book-Hunter-Proxy-Keywords-Service"]
 	path = Book-Hunter-Proxy-Keywords-Service
 	url = https://github.com/lauravz98/Book-Hunter-Proxy-Keywords-Service.git
-[submodule "Book-Hunter-Back-Edge"]
-	path = Book-Hunter-Back-Edge
-	url = https://github.com/lauravz98/Book-Hunter-Back-Edge.git
-[submodule "Book-Hunter-Front"]
-	path = Book-Hunter-Front
-	url = https://github.com/lauravz98/Book-Hunter-Front.git
