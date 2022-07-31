@@ -1,9 +1,9 @@
 [submodule "Book-Hunter-Config-Server"]
 	path = Book-Hunter-Config-Server
-	url = https://github.com/lauravz98/Book-Hunter-Config-Server
+	url = https://github.com/lauravz98/Book-Hunter-Config-Server.git
 [submodule "Eureka-Server"]
 	path = Eureka-Server
-	url = https://github.com/lauravz98/Eureka-Server
+	url = https://github.com/lauravz98/Eureka-Server.git
 [submodule "Book-Hunter-Config-repo"]
 	path = Book-Hunter-Config-repo
 	url = https://github.com/lauravz98/Book-Hunter-Config-repo.git
