@@ -22,3 +22,6 @@
 [submodule "Book-Hunter-Front"]
 	path = Book-Hunter-Front
 	url = https://github.com/lauravz98/Book-Hunter-Front.git
+[submodule "Book-Hunter-Back-Proxy-Keywords"]
+	path = Book-Hunter-Back-Proxy-Keywords
+	url = https://github.com/lauravz98/Book-Hunter-Back-Proxy-Keywords.git
