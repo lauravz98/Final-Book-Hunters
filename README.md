@@ -1,7 +1,15 @@
 # Book-Hunters
-Bienvenido a la applicacion de BookHunters.
-Esta app 
-Specificaciones
+Bienvenido a la applicacion de BookHunters. Creado por [**Laura Zambrano**](https://github.com/lauravz98) 
+
+Esta aplicacion es el proyecto final del Bootcamp de FullStack de JAVA powered by Ironhack - Accenture.
+
+# Contenido
+1. What's Book Hunters?
+2. About the project
+3. Next steps
+4. Acknowledgments
+
+
 Desarrollada el back con microservicios con Java Spring Boot principalmente. Y un microservicio en Python con flask
 El Front fue desarrollado en Angular, utilizando principalmente TS, HTML y CSS. Se utilizaron librerias como Angular Material para los componentes, Bootstrap y Toastify.
 
