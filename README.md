@@ -5,16 +5,18 @@ Esta aplicacion es el proyecto final del Bootcamp de FullStack de JAVA powered b
 
 # Contenido
 1. What's Book Hunters?
-2. About the project
-3. Next steps
-4. Acknowledgments
+2. Overview project
+3. Caracteristicas tenicas
+4. Getting started
+5. Next steps
+6. Acknowledgments
 
 # What's Book Hunters?
 
 Book Hunters es una aplicación creada con el objetivo de crear una comunidad colaborativa de lectores donde se compartan libros, mediante la app que conecta personas que deseen esconder sus libros y otras que deseen encontrarlos.
 
 <p align="center">
-    <img src = /img/2.png width="650">
+    <img src = /img/3.png width="650">
 </p>
 
 En este sentido se crea un ciclo donde no termina la vida util de los libros y se estimula la lectura de una forma ludica
@@ -22,10 +24,22 @@ En este sentido se crea un ciclo donde no termina la vida util de los libros y s
 Desarrollada el back con microservicios con Java Spring Boot principalmente. Y un microservicio en Python con flask
 El Front fue desarrollado en Angular, utilizando principalmente TS, HTML y CSS. Se utilizaron librerias como Angular Material para los componentes, Bootstrap y Toastify.
 
-<img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/angular.svg" width="30" height="30"> 
-
-<img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/brands/java.svg" width="30" height="30"> 
-
+<p align="center">
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="80" height="80" />
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  width="80" height="80" />
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="80" height="80"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="80" height="80"/>               
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80" height="80"/>
+</p>  
+<p align="center">
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"  width="80" height="80"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="80" height="80"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" width="80" height="80"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="80" height="80"/>
+	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="80" height="80"/>          
+</p>       
+          
+          
 ### <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/crown.svg" width="20" height="20"> Caracteristicas tecnicas:
 Para la conexion con la base de datos en MySQL, el manejo de datos con SpringBoot y el servidor web Tomcat se utilizaron las siguientes dependencias:
 
