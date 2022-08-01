@@ -23,9 +23,11 @@ In this sense, a cycle is created where the useful life of the books does not en
 
 # Project overview
 The global architecture diagram of the project is as follows. 
+<p align="center">
+    <img src = /img/BookHunter.drawio.png width="650">
+</p>
 
-
-## Frontend technologies
+### Frontend technologies
 The Front was developed in Angular, using mainly TS, HTML and CSS. We used libraries such as Angular Material for the components, Bootstrap and Toastify.
 <p align="center">
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="120" height="120" />	
@@ -35,7 +37,7 @@ The Front was developed in Angular, using mainly TS, HTML and CSS. We used libra
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="120" height="120"/>
 </p>  
 
-## Backend technologies
+### Backend technologies
 Developed the backend with microservices with Java Spring Boot mainly. And a microservice in Python with flask. Mysql was also used for the database, and RDS from Amazon Web Services.
 <p align="center">
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"  width="120" height="120"/>
@@ -48,9 +50,13 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
           
 # Technical features
 * The core of the application consists of 3 microservices proxies, books, review and keywords, and an Edge service in charge of the authentication and security of the application. Spring-boot services have their respective database.
-
+<p align="center">
+    <img src = /img/back_core.png width="650">
+</p>
 * The use-case diagram of the actions that a reader user can perform is as follows
-
+<p align="center">
+    <img src = /img/diagrama casos de uso.png width="650">
+</p>
 * For the connection with the MySQL database, the data management with SpringBoot and the Tomcat web server the following dependencies were used:
 
 
@@ -76,7 +82,7 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
     <img src = /img/eureka2.png width="650">
 </p>
 
-* The security was done with Spring Security. For this we used the ```spring-boot-starter-security`` dependency in the Edge Service. And we added the security configuration for the private routes, as well as a Custom User Details, and its service.
+* The security was done with Spring Security. For this we used the ``spring-boot-starter-security`` dependency in the Edge Service. And we added the security configuration for the private routes, as well as a Custom User Details, and its service.
 		
 ```java
 @Bean
@@ -100,9 +106,13 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
     <img src = /img/cobertura_tests.png >
 </p>
     
-*Additionally, the configuration of the mentioned microservices was externalized using the ``spring-cloud-starter-config`` dependency. The [configuration repository](https://github.com/lauravz98/Book-Hunter-Config-repo.git) is publicly available on Github.
+* Additionally, the configuration of the mentioned microservices was externalized using the ``spring-cloud-starter-config`` dependency. The [configuration repository](https://github.com/lauravz98/Book-Hunter-Config-repo.git) is publicly available on Github.
 	
    
+<p align="center">
+    <img src = /img/config_repo.png >
+</p>
+
 * Tambien se utilizo el patron de diseño Circuit Breaker para manejar el control de errores. Para ello se añadieron las dependencias de ```spring-cloud-starter-circuitbreaker-resilience4j``` y ```spring-cloud-starter-bootstrap```
     
 # Next Steps
