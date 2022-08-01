@@ -4,12 +4,11 @@ Welcome to the BookHunters application. Created by [**Laura Zambrano**](https://
 This application is the final project of the FullStack JAVA Bootcamp powered by Ironhack - Accenture.
 
 # Table of contents
-1. What is the book hunter?
-2. Project overview
-3. Technical characteristics
-4. How to get started
-5. Next steps
-6. Acknowledgements
+1. [What is the book hunter?] (https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
+2. [Project overview](https://github.com/lauravz98/Final-Book-Hunters#project-overview)
+3. [Technical features](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
+5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
+6. [Acknowledgements]()
 
 # What's Book Hunters?
 
@@ -50,13 +49,17 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
           
 # Technical features
 * The core of the application consists of 3 microservices proxies, books, review and keywords, and an Edge service in charge of the authentication and security of the application. Spring-boot services have their respective database.
+
 <p align="center">
     <img src = /img/back_core.png width="650">
 </p>
+
 * The use-case diagram of the actions that a reader user can perform is as follows
+
 <p align="center">
-    <img src = /img/diagrama casos de uso.png width="650">
+    <img src = /img/casos_uso.png width="650">
 </p>
+
 * For the connection with the MySQL database, the data management with SpringBoot and the Tomcat web server the following dependencies were used:
 
 
@@ -154,4 +157,8 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
 * Dark Mode
 * Advanced NPL algorithms
 *Include more APIs
-* Mobile version, with AR(?)...
+* Mobile version, with AR...
+
+# Acknowledgements
+
+Thank you very much to the Ironhack team for this incredible training. And Accentrure for this great opportunity.
