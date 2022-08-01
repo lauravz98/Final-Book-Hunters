@@ -113,7 +113,38 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
     <img src = /img/config_repo.png >
 </p>
 
-* Tambien se utilizo el patron de diseño Circuit Breaker para manejar el control de errores. Para ello se añadieron las dependencias de ```spring-cloud-starter-circuitbreaker-resilience4j``` y ```spring-cloud-starter-bootstrap```
+* The Circuit Breaker design pattern was also used to handle error handling. For this purpose, the following dependencies were added  ```spring-cloud-starter-circuitbreaker-resilience4j``` and ```spring-cloud-starter-bootstrap```
+
+* The application was deployed in heroku both front and back end, except for the python keyword service for compatibility. The link to access the front is [this](https://book-hunter-front.herokuapp.com/) 
+
+<p align="center">
+    <img src = /img/heroku.png >
+</p>
+
+> Note: this repository corresponds to the pre-deployment version because we had to reduce the services because heroku only supported 4 deployed services.
+
+* The application databases were connected to an AWS RDS instance. For privacy reasons, AW credentials are not included.
+<p align="center">
+    <img src = /img/AWS.png >
+</p>
+* Also included is the postman's collection of the most common requests. 
+
+
+| Method | Endpoint                     | Params                     | Description                   |
+|--------|------------------------------|----------------------------|-------------------------------|
+| GET    | /myBooks                     | userId: number             | Get books by user             |
+| GET    | /myBooks/{book_id}           | userId: number             | Get a book by user            |
+| POST   | /myBooks/{book_id}           | userId: number, Body: Book | Add a book to user's library  |
+| PUT    | /myBooks/{book_id}/hide      | userId: number             | Hide a book by user           |
+| DELETE | /myBooks/{book_id}           | userId: number             | Delete a book by user         |
+| GET    | /myBooks/bookHidden          | userId: number             | Get hidden books by user      |
+| GET    | /myBooks/bookFound           | userId: number             | Get hunted books by user      |
+| PUT    | /myBooks/bookFound/{book_id} | userId: number             | Hunt a book by user           |
+| GET    | /bookHidden                  | None                       | Get all hidden books          |
+| GET    | /bookFound                   | None                       | Get all hunted books          |
+| GET    | /books/{book_id}/keywords    | None                       | Get keywords from a book      |
+| GET    | /login                       | Auth: UserDetails          | Login in the app              |
+| POST   | /user                        | Body: UserDTO              | Create a new user             |
     
 # Next Steps
 * Location with Google API
