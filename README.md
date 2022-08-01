@@ -7,7 +7,8 @@ This application is the final project of the FullStack JAVA Bootcamp powered by 
 1. [What is the book hunter?](https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
 2. [Project overview](https://github.com/lauravz98/Final-Book-Hunters#project-overview)
 3. [Technical features](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
-5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
+4. [Getting started]()
+5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#next-steps)
 6. [Acknowledgements](https://github.com/lauravz98/Final-Book-Hunters#acknowledgements)
 
 # What's Book Hunters?
@@ -159,6 +160,33 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
 | GET    | /login                       | Auth: UserDetails          | Login in the app              |
 | POST   | /user                        | Body: UserDTO              | Create a new user             |
     
+# Getting Started
+
+1. Clone each project: ```git clone <project_name>``` . Or download ZIP
+2. Create schemas in MySQL for the Database of the projects: Books, Reviews and Edge. The DDL file are on the path ```<project_name>/src/main/resources/DDL.sql```
+3. Run the microservices with ```mvn spring-boot:run``` . The suggested order is:
+```
+https://github.com/lauravz98/Book-Hunter-Config-Server
+https://github.com/lauravz98/Eureka-Server 	
+https://github.com/lauravz98/Book-Hunter-Back-Proxy-Books
+https://github.com/lauravz98/Book-Hunter-Back-Proxy-Keywords
+https://github.com/lauravz98/Book-Hunter-Back-Edge
+```
+To run the keyword service in python, open the folder with VSCode and run in the terminal:
+```
+reviews-service/Scripts/activate.bat
+python flask_app.py
+```
+> the first command activates the virtual environment and the second one executes the python file. You may need to have python installed on your computer and it may ask you to install some libraries. In case it is necessary ```pip install flask pandas py-eureka-client ```
+
+4. Open the frontend and execute the following commands
+```
+npm install 
+ng serve 
+```
+
+Now bookhunters is running successfully on your computer locally in http://localhost:4200/. Good luck!
+
 # Next Steps
 * Location with Google API
 * Full Deployment
