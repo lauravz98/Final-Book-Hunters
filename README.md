@@ -100,7 +100,8 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
         http.httpBasic();
         http.csrf().disable();
         http.authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/myBooks/**", "/bookFound/**", "/bookHidden/**", "/login").authenticated() 
+                .antMatchers(HttpMethod.GET, "/myBooks/**", "/bookFound/**", "/bookHidden/**"
+			, "/login").authenticated() 
                 .antMatchers(HttpMethod.POST, "/myBooks/**").authenticated()
                 .antMatchers(HttpMethod.PUT, "/myBooks/**").authenticated()
                 .antMatchers(HttpMethod.DELETE, "/myBooks/**").authenticated()
@@ -137,7 +138,9 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
 <p align="center">
     <img src = /img/AWS.png >
 </p>
-* Also included is the postman's collection of the most common requests. 
+
+* Also included is the postman's collection of the most common requests. The following table summarizes some of the requests that can be made on the Edge service
+
 
 
 | Method | Endpoint                     | Params                     | Description                   |
