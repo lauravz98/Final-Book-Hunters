@@ -4,12 +4,11 @@ Welcome to the BookHunters application. Created by [**Laura Zambrano**](https://
 This application is the final project of the FullStack JAVA Bootcamp powered by Ironhack - Accenture.
 
 # Table of contents
-1. What is the book hunter?
-2. Project overview
-3. Technical characteristics
-4. How to get started
-5. Next steps
-6. Acknowledgements
+1. [What is the book hunter?](https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
+2. [Project overview](https://github.com/lauravz98/Final-Book-Hunters#project-overview)
+3. [Technical features](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
+5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
+6. [Acknowledgements](https://github.com/lauravz98/Final-Book-Hunters#acknowledgements)
 
 # What's Book Hunters?
 
@@ -50,13 +49,23 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
           
 # Technical features
 * The core of the application consists of 3 microservices proxies, books, review and keywords, and an Edge service in charge of the authentication and security of the application. Spring-boot services have their respective database.
+
 <p align="center">
     <img src = /img/back_core.png width="650">
 </p>
+
 * The use-case diagram of the actions that a reader user can perform is as follows
+
 <p align="center">
-    <img src = /img/diagrama casos de uso.png width="650">
+    <img src = /img/casos_uso.png width="650">
 </p>
+
+* The entity-relationship diagram is as follows. From the entity book inherit the tables of my books, hidden books and found books.
+
+<p align="center">
+    <img src = /img/uml.png width="650">
+</p>
+
 * For the connection with the MySQL database, the data management with SpringBoot and the Tomcat web server the following dependencies were used:
 
 
@@ -113,7 +122,38 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
     <img src = /img/config_repo.png >
 </p>
 
-* Tambien se utilizo el patron de diseño Circuit Breaker para manejar el control de errores. Para ello se añadieron las dependencias de ```spring-cloud-starter-circuitbreaker-resilience4j``` y ```spring-cloud-starter-bootstrap```
+* The Circuit Breaker design pattern was also used to handle error handling. For this purpose, the following dependencies were added  ```spring-cloud-starter-circuitbreaker-resilience4j``` and ```spring-cloud-starter-bootstrap```
+
+* The application was deployed in heroku both front and back end, except for the python keyword service for compatibility. The link to access the front is [this](https://book-hunter-front.herokuapp.com/) 
+
+<p align="center">
+    <img src = /img/heroku.png >
+</p>
+
+> Note: this repository corresponds to the pre-deployment version because we had to reduce the services because heroku only supported 4 deployed services.
+
+* The application databases were connected to an AWS RDS instance. For privacy reasons, AW credentials are not included.
+<p align="center">
+    <img src = /img/AWS.png >
+</p>
+* Also included is the postman's collection of the most common requests. 
+
+
+| Method | Endpoint                     | Params                     | Description                   |
+|--------|------------------------------|----------------------------|-------------------------------|
+| GET    | /myBooks                     | userId: number             | Get books by user             |
+| GET    | /myBooks/{book_id}           | userId: number             | Get a book by user            |
+| POST   | /myBooks/{book_id}           | userId: number, Body: Book | Add a book to user's library  |
+| PUT    | /myBooks/{book_id}/hide      | userId: number             | Hide a book by user           |
+| DELETE | /myBooks/{book_id}           | userId: number             | Delete a book by user         |
+| GET    | /myBooks/bookHidden          | userId: number             | Get hidden books by user      |
+| GET    | /myBooks/bookFound           | userId: number             | Get hunted books by user      |
+| PUT    | /myBooks/bookFound/{book_id} | userId: number             | Hunt a book by user           |
+| GET    | /bookHidden                  | None                       | Get all hidden books          |
+| GET    | /bookFound                   | None                       | Get all hunted books          |
+| GET    | /books/{book_id}/keywords    | None                       | Get keywords from a book      |
+| GET    | /login                       | Auth: UserDetails          | Login in the app              |
+| POST   | /user                        | Body: UserDTO              | Create a new user             |
     
 # Next Steps
 * Location with Google API
@@ -123,4 +163,8 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
 * Dark Mode
 * Advanced NPL algorithms
 *Include more APIs
-* Mobile version, with AR(?)...
+* Mobile version, with AR...
+
+# Acknowledgements
+
+Thank you very much to the Ironhack team for this incredible training. And Accentrure for this great opportunity.
