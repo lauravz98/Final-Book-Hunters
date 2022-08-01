@@ -7,7 +7,7 @@ This application is the final project of the FullStack JAVA Bootcamp powered by 
 1. [What is the book hunter?](https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
 2. [Project overview](https://github.com/lauravz98/Final-Book-Hunters#project-overview)
 3. [Technical features](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
-4. [Getting started]()
+4. [Getting started](https://github.com/lauravz98/Final-Book-Hunters#getting-started)
 5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#next-steps)
 6. [Acknowledgements](https://github.com/lauravz98/Final-Book-Hunters#acknowledgements)
 
