@@ -21,7 +21,8 @@ In this sense, a cycle is created where the useful life of the books does not en
 
 
 # Project overview
-The global architecture diagram of the project is as follows. 
+In this project different technologies were used for the back and front end, especially spring-boot and angular. The global architecture diagram of the project is as follows.
+
 <p align="center">
     <img src = /img/BookHunter.drawio.png width="650">
 </p>
@@ -54,10 +55,10 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
     <img src = /img/back_core.png width="650">
 </p>
 
-* The use-case diagram of the actions that a reader user can perform is as follows
+* The use-case diagram of the actions that a reader user can perform is as follows. In short, users can create a new account, log in, consult books, add them to their library, view their books, both general and hidden and hunted, hunt books, hide them, and view the general list of books to hunt and hunted.
 
 <p align="center">
-    <img src = /img/casos_uso.png width="650">
+    <img src = /img/casos_uso.png>
 </p>
 
 * The entity-relationship diagram is as follows. From the entity book inherit the tables of my books, hidden books and found books.
