@@ -4,11 +4,11 @@ Welcome to the BookHunters application. Created by [**Laura Zambrano**](https://
 This application is the final project of the FullStack JAVA Bootcamp powered by Ironhack - Accenture.
 
 # Table of contents
-1. [What is the book hunter?] (https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
+1. [What is the book hunter?](https://github.com/lauravz98/Final-Book-Hunters#whats-book-hunters)
 2. [Project overview](https://github.com/lauravz98/Final-Book-Hunters#project-overview)
 3. [Technical features](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
 5. [Next steps](https://github.com/lauravz98/Final-Book-Hunters#technical-features)
-6. [Acknowledgements]()
+6. [Acknowledgements](https://github.com/lauravz98/Final-Book-Hunters#acknowledgements)
 
 # What's Book Hunters?
 
@@ -58,6 +58,12 @@ Developed the backend with microservices with Java Spring Boot mainly. And a mic
 
 <p align="center">
     <img src = /img/casos_uso.png width="650">
+</p>
+
+* The entity-relationship diagram is as follows. From the entity book inherit the tables of my books, hidden books and found books.
+
+<p align="center">
+    <img src = /img/uml.png width="650">
 </p>
 
 * For the connection with the MySQL database, the data management with SpringBoot and the Tomcat web server the following dependencies were used:
